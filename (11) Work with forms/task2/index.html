@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<form class="form" action="#">
+    <ul class="list">
+        <li>
+            <h1>Калькулятор стоимости доставки</h1>
+        </li>
+        <li>
+    <label>
+        Название товара:
+        <input type="text" class="product-name" name="product-name" minlength="3">
+    </label>
+        </li>
+        <li>
+    <label>
+        Вес товара (кг):
+        <input type="number" class="product-weight" name="product-weight" required>
+    </label>
+        </li>
+        <li>
+    <label>
+        Расстояние доставки (км):
+        <input type="number" class="product-distance" name="product-distance" required>
+    </label>
+        </li>
+        <li>
+            <button class="button" type="submit">Добавить товар</button>
+        </li>
+    </ul>
+</form>
+
+<div class="error">
+    <h2>Пожалуйста, введите корректные значения для веса и/или расстояния</h2>
+</div>
+
+<table class="product-table">
+    <thead>
+    <tr>
+        <th>Название товара</th>
+        <th>Вес (кг)</th>
+        <th>Расстояние (км)</th>
+        <th>Стоимость доставки</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Здесь будут добавляться товары -->
+    </tbody>
+</table>
+<script src="index3.js"></script>
+</body>
+</html>

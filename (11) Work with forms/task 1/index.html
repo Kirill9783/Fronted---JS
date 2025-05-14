@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <form class="form" action="#">
+        <ul class="list">
+            <li>
+                <h1 class="title">Форма опроса</h1>
+            </li>
+            <li>
+                <label >
+                    Имя пользователя: <input class="user-name" type="text" placeholder="Имя" minlength="3" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Email: <input type="email" class="email" placeholder="example@example.ru" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Пол: <input type="radio" class="radio" name="radio" value="Мужской">Мужской <input type="radio"class="radio" name="radio" value="Женский">Женский
+                </label>
+            </li>
+            <li>
+                <label>
+                    Оценка сервиса: <input class="range" type="range" min="1" max="10" step="1">&nbsp;<output class="value"></output>
+                </label>
+            </li>
+            <li class="list-survey"> Интересы пользователя:
+                <label>
+                    <input type="checkbox" class="checkbox" name="survey" value="Спорт">Спорт
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" name="survey" value="Музыка">Музыка
+                </label>
+                    <label>
+                    <input type="checkbox" class="checkbox" name="survey" value="Путешествие">Путешествие
+                    </label>
+                        <label>
+                    <input type="checkbox" class="checkbox" name="survey" value="Кино">Кино
+                </label>
+            </li>
+            <li>Дополнительные комментарии:
+                <label class="comment">
+                     <input class="comment__input" type="text" placeholder="Дополнительные комментарии">
+                </label>
+            </li>
+            <li>
+                <button class="button" type="submit">Отправить</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

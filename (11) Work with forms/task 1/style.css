@@ -1,0 +1,36 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.list-survey {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment__input {
+    width: 300px;
+    height: 100px;
+    text-align: start;
+}
+
+.button {
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.button:hover {
+    background-color: #70FFE9;
+}
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог фильмов</title>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="film-form" autocomplete="off" novalidate="novalidate">
+        <label for="title">Название:</label><br />
+        <div class="form-wrap">
+        <input type="text" id="title" autocomplete="off" name="title" /><br />
+        </div>
+        <label for="genre">Жанр:</label><br />
+        <div class="form-wrap">
+        <input type="text" id="genre" name="genre" /><br />
+        </div>
+        <label for="releaseYear">Год:</label><br />
+        <div class="form-wrap">
+        <input type="text" id="releaseYear" name="releaseYear" /><br />
+        </div>
+        <input type="checkbox" id="isWatched" name="isWatched" />
+        <label for="isWatched">Успели посмотреть?</label><br />
+
+        <!-- <input type="submit" value="Submit"> -->
+        <div class="btns">
+        <button class="save" type="submit">Сохранить</button>
+        <button class="stop-update" id="cancelEdit" type="submit">Отменить редактирование</button>
+        </div>
+    </form>
+
+    <label>
+        <select name="select" class="select">
+            <option value="">--Сортировать--</option>
+            <option value="title">Название</option>
+            <option value="genre">Жанр</option>
+            <option value="releaseYear">Год</option>
+            <option value="id">По умолчанию</option>
+        </select>
+    </label>
+
+    <table id="film-table">
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Жанр</th>
+            <th>Год</th>
+            <th>Успели посмотреть?</th>
+            <th>Действие</th>
+        </tr>
+        </thead>
+        <tbody id="film-tbody">
+        <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

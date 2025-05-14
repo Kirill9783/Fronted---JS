@@ -1,0 +1,11 @@
+li {
+    list-style-type: none;
+}
+
+.add-product {
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: green;
+    border-radius: 15px;
+}

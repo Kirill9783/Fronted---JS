@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="all">
+
+    <form class="form" action="#">
+        <ul class="list">
+            <li>
+                <h1>Создайте свою карту</h1>
+            </li>
+            <li>
+                <label>
+                    Введите номер карты:
+                    <input type="text" class="number-card" name="number-card" maxlength="19" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Введите фамилию и имя:
+                    <input type="text" class="name-holder" name="name-holder" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Введите дату:
+                    <input type="number" class="date-card" name="date-card" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Выберите платежную систему:
+                    <select class="pay-system" name="pay-system">
+                        <option value="">----------------</option>
+                        <option value="images/visa.png">VISA</option>
+                        <option class="mc" value="images/mc.png">MasterCARD</option>
+                        <option class="mir" value="images/mir.png">МИР</option>
+                    </select>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Выберите фон:
+                    <select class="bg" name="bg" required>
+                        <option value="">----------------</option>
+                        <option value="transparent">По умолчанию</option>
+                        <option value="blue">Синий</option>
+                        <option value="red">Красный</option>
+                        <option value="green">Зеленый</option>
+                    </select>
+                </label>
+            </li>
+        </ul>
+    </form>
+    <div class="container">
+        <h2>Ваша карта</h2>
+        <div class="card">
+            <img class="logo-img" src="" alt="Лого платежной системы">
+            <label class="label">Card Number</label>
+            <output class="card-number"></output>
+            <div class="container2">
+                <div class="name">
+                    <label class="label">Card Holder</label>
+                    <output class="card-name"></output>
+                </div>
+                <div class="name">
+                    <label class="label">Exp. Date</label>
+                    <output class="card-name card-date"></output>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

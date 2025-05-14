@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", "Verdana", sans-serif;
+    background-color: rgb(229, 229, 229);
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    position: relative;
+}
+
+.delivered {
+    border: 2px solid green;
+}
+
+.card__title {
+    color: grey;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.card__delivery-info {
+    color: #000000;
+    font-size: 14px;
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+
+.canceled .card__delivery-info {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card__edit-btn {
+    position: absolute;
+    padding: 5px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.card__edit-btn:hover:not([disabled]) {
+    background-color: blue;
+    color: #FFFFFF;
+}
+
+.card__edit-btn:disabled {
+    cursor: default;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.edit-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    z-index: 2;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.edit-card__shadow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.edit-card__title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-field,
+.select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 8px;
+    outline: none;
+}
+
+.text-field:hover,
+.text-field:focus-visible {
+    border-color: rgb(42, 49, 255);
+}
+
+.close-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+}
+
+.save-btn {
+    width: 100%;
+    background-color: blue;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

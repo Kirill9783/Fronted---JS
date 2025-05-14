@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<form id="film-form">
+    <label for="title">Название:</label><br>
+    <div class="form-wrap">
+        <input type="text" id="title" name="title"><br>
+    </div>
+    <label for="genre">Жанр:</label><br>
+    <div class="form-wrap">
+        <input type="text" id="genre" name="genre"><br>
+    </div>
+    <label for="releaseYear">Год:</label><br>
+    <div class="form-wrap">
+        <input type="text" id="releaseYear" name="releaseYear"><br>
+    </div>
+    <input type="checkbox" id="isWatched" name="isWatched">
+    <label for="isWatched">Успели посмотреть?</label><br>
+    <input type="submit" value="Submit">
+</form>
+
+<form id="film-filter">
+    <input type="text" id="title-sort" name="title-sort" placeholder="Название фильма">
+    <input type="text" id="genre-sort" name="genre-sort" placeholder="Жанр фильма">
+    <input type="text" id="releaseYear-sort" name="releaseYear-sort" placeholder="Год выпуска">
+    <select name="select" id="select">
+        <option value="">--Уже посмотрели?--</option>
+        <option value="true">Да</option>
+        <option value="false">нет</option>
+    </select>
+    <button class="delete-all" type="button">Удалить все</button>
+
+</form>
+
+<table id="film-table">
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Жанр</th>
+        <th>Год</th>
+        <th>Успели посмотреть?</th>
+        <th>Действие</th>
+    </tr>
+    </thead>
+    <tbody id="film-tbody">
+    <!-- Rows will be inserted here -->
+    </tbody>
+</table>
+<script src="index.js"></script>
+</body>
+</html>
